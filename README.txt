@@ -314,16 +314,16 @@ Architecture and Design
 
 High level design goals:
 	•	Strict separation of concerns:
-	•	infra for config/logging.
-	•	core for low-level primitives and scoring.
-	•	services for cryptanalytic algorithms.
-	•	api for public, user-facing entrypoints.
+		•	infra for config/logging.
+		•	core for low-level primitives and scoring.
+		•	services for cryptanalytic algorithms.
+		•	api for public, user-facing entrypoints.
 	•	Fast, deterministic scoring:
-	•	Integer-encoded text.
-	•	Rolling hash indexing into contiguous n-gram arrays.
+		•	Integer-encoded text.
+		•	Rolling hash indexing into contiguous n-gram arrays.
 	•	Offline-safe:
-	•	No network calls.
-	•	Minimal dependencies.
+		•	No network calls.
+		•	Minimal dependencies.
 
 For more details, see:
 	•	ARCHITECTURE.md for a deeper walkthrough of the module layout and data flow.
